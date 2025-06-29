@@ -17,3 +17,11 @@ def get_num_letters(text):
             woorden_teller[kleine_letter] = 1
     return woorden_teller
 
+def sorted_dic(dic):
+    temp_dictionary = []
+    for letter, nummer in dic.items():
+        temp_dictionary.append({"char": letter, "num": nummer})
+    return temp_dictionary
+
+def sorteer_op(dic):
+    return dic["num"]
